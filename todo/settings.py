@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url(
+    'default': dj_database_url.config(
         default='postgresql://postgres:postgres@localhost:5432/todo',
         conn_max_age=600
     )
